@@ -1,0 +1,11 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: readonly-pods-test-user
+subjects:
+  - kind: User
+    name: test-user
+roleRef:
+  kind: ClusterRole
+  name: readonly-pods
+  apiGroup: rbac.authorization.k8s.io

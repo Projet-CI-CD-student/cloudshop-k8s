@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backend-config
+  namespace: cloudshop
+data:
+  APP_NAME: "CloudShop API"
+  APP_VERSION: "v1"
